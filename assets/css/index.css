@@ -15,6 +15,10 @@ body{
     margin: 0;
 }
 
+p{
+    font-family: 'RobotoRegular', sans-serif;
+}
+
 a{
     text-decoration: none;
 }
@@ -34,26 +38,77 @@ a{
     height: 100vh;
 }
 
-.banner div{
+.banner > div{
+    height: 100%;
+}
+
+.banner-content{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     color: #fff;
 }
 
-.banner div a{
+.banner-content h2{
+    margin: 50px 0 50px;
+    font-size: 20pt;
+}
+
+.banner-content p{
+    margin: 50px 0 50px;
+    text-align: center;
+    background-color: rgba(43, 43, 43, 0.753);
+    padding: 30px 30px;
+}
+
+.banner-content a{
     background-color: #fff;  
     border-radius: 40px;
     color: #000;
+    margin: 50px 0 50px;
     padding: 12px 20px;
     font-size: 1.5rem;
     width: 150px;
     text-align: center;
 }
 
-.banner div a:hover{
-    background-color: #EC284E; 
-    transition: 0.5s;
+.banner-content a:active{
+    background-color: #EC284E;
+}
+
+@media(min-width: 576px){
+    .banner-content{
+        align-items: flex-start;
+        padding: 0 10vw 0 10vw;
+    }
+
+    .banner-content h2{
+        margin: 10px 0;
+        font-size: 4.5rem;
+    }
+    
+    .banner-content p{
+        margin: 16px 0 30px;
+        text-align: left;
+        background-color: initial;
+        padding: 0;
+        width: 600px;
+    }
+    
+    .banner-content a{
+        background-color: #fff;  
+        border-radius: 40px;
+        color: #000;
+        margin: 0;
+        padding: 12px 20px;
+        font-size: 1.5rem;
+        width: 150px;
+        text-align: center;
+    }
+
+    .banner-content a:hover{
+        background-color: #EC284E;
+    }
 }
