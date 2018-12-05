@@ -1,0 +1,210 @@
+/* GERAL */
+@font-face {
+    font-family: 'RobotoBlack';
+    src:url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src:url(../fonts/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: 'RobotoBlack', sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    position: fixed;
+}
+
+/* Banner */
+.banner{
+    background-image: url(../img/bg_banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.banner > div{
+    height: 100%;
+}
+
+.banner-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+@media(min-width: 576px){
+    .banner-content{
+        align-items: flex-start;
+        padding: 0 10vw 0 10vw;
+    }
+
+    .banner-content a:hover{
+        background-color: #EC284E;
+    }
+}
+
+/* Cadastrar/Login */
+.externa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3px;
+}
+
+.interna{
+    padding: 110px;
+    margin: 10px;
+}
+
+  h3 {
+    font-size: 22px;
+    font-family: "RobotoRegular", Helvetica, sans-serif;
+    margin: 25px;
+    color: #FFF;
+} 
+
+.loginFace{
+    color: #fff;
+    background-color: #3c4c84;
+    border: 0cm;
+    outline: none;
+    padding: 16px;
+    font-size: 17px;
+    margin: 10px;
+    width: 250px;
+}
+
+.loginEmail{
+    color: #fff;
+    background-color: #d1a429;
+    border: 0cm;
+    outline: none;
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px;
+    width: 250px;
+}
+
+.btLogin{
+    background-color: #ec284e;
+    color: #fff;
+    border: 0cm;
+    outline: none;
+    padding: 18px;
+    font-size: 17px;
+    margin: 10px;
+    width: 200px;
+}
+
+.putTexto{
+    margin: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: black;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Linha */
+  .box {
+    width: 50%;
+    float: left;
+    height: 300px;
+   }
+   
+   .linha-vertical {
+    border-left: 2px solid #ec284e;
+    box-sizing: border-box;
+    margin-top: 150px;
+   }
+
+   @media(max-width: 576px){
+
+    .banner{
+        background-image: url(../img/bg_banner.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 230vh;
+    }
+
+    .externa{
+        display: inline;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+
+    .interna{
+        padding: 40px;
+        margin: 2px;
+        text-align: center;
+    }
+
+    .banner-content{
+        align-items: flex-start;
+        padding: 0 10vw 0 10vw;
+    }
+
+    .box {
+        width: 0%;
+        float: left;
+        visibility: hidden;
+       }
+
+       .loginFace{
+        color: #fff;
+        background-color: #3c4c84;
+        border: 0cm;
+        outline: none;
+        padding: 10px;
+        font-size: 15px;
+        margin: 10px;
+        width: 240px;
+     }
+
+       .loginEmail{
+        color: #fff;
+        background-color: #d1a429;
+        border: 0cm;
+        outline: none;
+        padding: 10px;
+        font-size: 15px;
+        margin: 10px;
+        width: 240px;
+    }
+       
+
+       .putTexto{
+        margin: 5px;
+        border-radius: 10px;
+        outline: none;
+        border: black;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .btLogin{
+        background-color: #ec284e;
+        color: #fff;
+        border: 0cm;
+        outline: none;
+        padding: 15px;
+        font-size: 15px;
+        margin: 10px;
+        width: 200px;
+    }
+
+}
