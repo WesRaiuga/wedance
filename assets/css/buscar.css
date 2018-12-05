@@ -25,6 +25,7 @@ a{
 
 .navbar{
     position: fixed;
+    z-index: 3;
 }
 
 /* CONTEÚDO DA PÁGINA */
