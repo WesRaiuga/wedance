@@ -36,7 +36,7 @@ a{
 
 .busca{
     display: flex;
-    padding: 5vh 10vw 2vh 10vw;
+    padding: 5vh 10vw 2vh;
 }
 
 .busca input{
@@ -56,6 +56,15 @@ a{
     padding: 10px 15px;
     border-width: 2px 2px 2px 1px;
     border-color: #000;
+    cursor: pointer;
+}
+
+.busca button:active{
+    background-color: #00A0BA;
+}
+
+.busca button:active .busca button i{
+    color: #FFF;
 }
 
 .busca button i{
@@ -63,23 +72,31 @@ a{
 }
 
 /* Resultados */
-.resultados{
-    padding: 0 5vw;
-}
-
 #resultados-info{
     margin: 0 0 20px 0;
     text-align: center;
+    visibility: hidden;
+}
+
+#resultados{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 5vw;
 }
 
 .card{
-    width: 90vw;
     height: 150px;
     background-image: linear-gradient( to right, #EC284E, #000 55%);
     box-shadow: 5px 10px 18px #888888;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 20px 0;
+}
+
+.card:active{
+    background-image: linear-gradient( to right, #000, #00A0BA 55%);
 }
 
 .card img{
@@ -91,4 +108,14 @@ a{
 .card div{
     color: #FFF;
     width: 60%;
+}
+
+@media(min-width: 576px) {
+    .busca{
+        padding: 5vh 30vw 2vh;
+    }
+
+    .resultados{
+        padding: 0;
+    }
 }
