@@ -59,7 +59,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 3px;
 }
 
 .interna{
