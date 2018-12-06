@@ -1,0 +1,232 @@
+/* GERAL */
+@font-face {
+    font-family: 'RobotoBlack';
+    src:url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src:url(../fonts/Roboto-Regular.ttf);
+}
+
+body{
+    background-color: #FFF;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+p{
+    font-family: 'RobotoRegular', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 3;
+}
+
+/* APRESENTAÇÃO DO CADASTRO */
+.apresentacao-cadastro {
+    background-attachment: fixed;
+    background-image: url(../img/cadastro.png);
+    background-position: right;
+    background-size: cover;
+    color: #1a1919;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.apresentacao-cadastro h1 {
+    font-size: 4rem;
+    margin: 0;
+    /* margin-bottom: 5%; */
+}
+
+.apresentacao-cadastro h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.botoes-cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    widows: 100vw;
+    margin: 4%;
+}
+
+.botoes-cadastro a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.pessoa-cadastro {
+    border: none;
+    background-color: #000000;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    height: 9vh;
+    opacity: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 35vw;
+} 
+
+.pessoa-cadastro:hover {
+    opacity: .6;
+}
+
+/* FORMULÁRIO DO CADASTRO */
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+form h3 {
+    color: #EC284E;
+    font-size: 1.5rem;
+    margin: 15% 0 4% 0;
+    text-align: center;
+}
+
+.categoria-cadastro h3 {
+    border-bottom-color: #464444;
+    border-bottom-style: solid;
+}
+
+label {
+    font-size: 1.2rem;
+    margin: 4% 0 2% 0;
+}
+
+input {
+    height: 4vh;
+    border-style: outset;
+}
+
+.check {
+    width: 6vw;
+}
+
+select {
+    background-color: #ffffff;
+    border-style: outset;
+    cursor: pointer;
+    height: 5vh;
+}
+
+.checkbox p, .finalizar-cadastro p {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.finalizar-cadastro {
+    align-items: center;
+    display: flex;
+    margin-top: 5%;
+}
+
+.finalizar-cadastro {
+    font-size: .8rem;
+    color: #1a1818;
+    text-align: center;
+}
+
+.finalizar-cadastro a {
+    background-color: #EC284E;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 10px 0 50px;
+    padding: 12px 20px;
+    text-align: center;
+    width: 150px;
+}
+
+.finalizar-cadastro a:hover{
+    background-color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+/* RESPONSIVIDADE */
+@media(min-width: 768px) {
+    /* APRESENTAÇÃO DO CADASTRO */
+    .apresentacao-cadastro h1 {
+        font-size: 6rem;
+    }
+
+    .apresentacao-cadastro h2 {
+        font-size: 3rem;
+    }
+
+    .apresentacao-cadastro p {
+        font-size: 1.4rem;
+    }
+
+    /* FORMULARIO */
+    form {
+        background-color: #eeebeb;
+        padding-top: 5%;
+    }
+
+    form div {
+        width: 55vw;
+    }
+
+    form h3 {
+        text-align: left;
+        margin: 6% 0px 1% 0;
+    }
+
+    .pessoa-cadastro {
+        border-radius: 10px;
+        height: 7vh;
+        width: 20vw;
+    }
+
+    label {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 20vw;
+        margin: 3% 0 1% 0;
+    }
+
+    input {
+        height: 5vh;
+        /* width: 20vw; */
+    }
+
+    .check {
+        height: 4vh;
+    }
+
+    select {
+        height: 6vh;
+    }
+
+    .finalizar-cadastro {
+        margin-top: 2%;
+    }
+
+}
