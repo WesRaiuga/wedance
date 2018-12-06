@@ -39,6 +39,7 @@ a{
 
 .foto img{
     height: 40vh;
+    border: 3px solid #EC284E;
 }
 
 .info-perfil{
@@ -91,10 +92,6 @@ a{
         padding: 80px 10vw 0;
         flex-direction: row;
         justify-content: center;
-    }
-
-    .foto img{
-        height: initial;
     }
 
     .info-perfil{

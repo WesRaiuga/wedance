@@ -88,6 +88,7 @@ a{
 
 .card{
     height: 150px;
+    width: 80%;
     background-image: linear-gradient( to right, #EC284E, #000 55%);
     box-shadow: 5px 10px 18px #888888;
     display: flex;
@@ -118,5 +119,9 @@ a{
 
     #resultados{
         padding: 0;
+    }
+
+    .card{
+        width: 430px;
     }
 }
