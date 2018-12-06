@@ -80,6 +80,8 @@ a{
 }
 
 
+
+/* EXPLICAÇÃO - PARTE2 DA HOME */
 .explicacao{
     display: flex;
     flex-direction: column;
@@ -106,6 +108,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .imagem1{
@@ -135,6 +138,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 90px;
 } 
 
 .conjunto3 .texto3{
@@ -221,7 +225,123 @@ a{
     100%{
         transform: translatey(0px);
     }
+    
+}
 
+/* Parte3 - Teceira parte da Home  */
+.parte3{
+    display: flex;
+    background-image: url(../img/fundo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.fundo-preto-desk{
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+}
+
+.parte3 .informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.informacoes h2{
+    color: #FFF;
+    text-align: center;
+    font-style: italic;
+}
+
+.informacoes hr{
+    width: 200px;
+    border: solid 2px #EC284E;
+    
+}
+
+.informacoes .hr-1{
+    margin-left: 0px;
+}
+
+.informacoes .hr-2{
+    margin-right: 0px;
+}
+
+.informacoes p{
+    color: #FFF;
+    text-align: right;
+    font-weight: 500;
+    margin: 0px 50px 40px 0px;
+}
+
+.aspas{
+    color: #EC284E;
+    font-size: 2.5rem;
+}
+
+
+/* Ultima parte */
+
+.Cadastre-se-fim div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #000 2px solid;
+    width: 320px;
+    padding: 5px 5px 40px 5px;
+}
+
+.Cadastre-se-fim{
+    background-color: #EC284E;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cadastre-se-fim h2{
+    color: #000;
+    font-size: 3rem;
+    margin-bottom: 4px;
+    font-family: 'RobotoBlack';
+}
+
+.Cadastre-se-fim p{
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'RobotoRegular';
+}
+
+.Cadastre-se-fim a{
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 16px;
+    margin-top: 10px;
+    font-family: 'RobotoBlack';
+}
+
+.Cadastre-se-fim a:hover{
+    background-color: #000;
+    transition: .7s;
+    color: #fff;
+}
+
+footer{
+    display: flex;
+    height: 40vh;
+    background-color: #000;
 }
 
 
@@ -232,7 +352,7 @@ a{
         align-items: flex-start;
         padding: 0 10vw 0 10vw;
     }
-
+    
     .banner-content h2{
         margin: 10px 0;
         font-size: 4.5rem;
@@ -256,16 +376,16 @@ a{
         width: 150px;
         text-align: center;
     }
-
+    
     .banner-content a:hover{
         background-color: #EC284E;
     }
-
+    
     .imagem-desk{
         display: flex;
     }
     
-
+    
     .imagem-mobile{
         display: none;
     }
@@ -277,11 +397,11 @@ a{
         justify-content: center;
         width: 90vw;
     }
-
+    
     .explicacao h2{
         font-size: 3rem;
     }
-
+    
     .imagem2{
         margin-left: 50px;
     }
@@ -297,7 +417,7 @@ a{
         flex-direction: row;
         text-align: left;
     } 
-
+    
     .conjunto1 .texto1{
         display: flex;
         margin-top: 10px;
@@ -307,14 +427,7 @@ a{
         justify-content: center;
         align-items: flex-start;
     }
-
-
-   
     
-    
-    
-    
-
     .imagem1{
         margin-left: 20vw;
     }
@@ -338,7 +451,7 @@ a{
         justify-content: center;
         align-items: center;
     } 
-
+    
     
     
     .conjunto2 .texto2{
@@ -354,8 +467,8 @@ a{
         justify-content: center;
         align-items: flex-end;
     }
-
-
+    
+    
     .conjunto2 h2{
         margin-bottom: 5px;
     }
@@ -388,7 +501,7 @@ a{
         justify-content: center;
         align-items: flex-start;
     }
-
+    
     
     .conjunto3 h2{
         margin-bottom: 5px;
@@ -399,12 +512,91 @@ a{
         border: solid 1px #EC284E;
         width: 140px;
         margin-left: 1px;
-
+        
         
     }
     
     .imagem3{
         margin-left: 20vw;
     }
-
+    
+    
+    /* Parte3 - Teceira parte da Home  */
+    
+    .fundo-preto-desk{
+        background-color: rgba(0, 0, 0, 0.596);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .parte3 .informacoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .informacoes hr{
+        width: 400px;
+        border: solid 4px #EC284E;
+    }
+    
+    .informacoes h2{
+        color: #FFF;
+        text-align: center;
+        font-style: italic;
+        font-size: 2.5rem;
+    }
+    
+    .informacoes p{
+        color: #FFF;
+        text-align: right;
+        font-weight: 500;
+        margin: 0px 50px 40px 0px;
+    }
+    
+    .aspas{
+        color: #EC284E;
+        font-size: 2.5rem;
+    }
+    
+    /* Ultima parte */
+    
+    .Cadastre-se-fim div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: #000 2px solid;
+        width: 500px;
+        padding: 5px 5px 40px 5px;
+    }
+    
+    .Cadastre-se-fim{
+        background-color: #EC284E;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Cadastre-se-fim h2{
+        color: #000;
+        font-size: 3rem;
+        margin-bottom: 4px;
+        font-family: 'RobotoBlack';
+    }
+    
+    .Cadastre-se-fim p{
+        color: #000;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'RobotoRegular';
+    }
+    
 }
