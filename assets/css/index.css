@@ -359,11 +359,15 @@ footer{
     }
     
     .banner-content p{
-        margin: 16px 0 30px;
+        margin: 16px 0 0;
         text-align: left;
         background-color: initial;
         padding: 0;
         width: 50vw;
+    }
+
+    #sub{
+        margin: 5px 0 40px;
     }
     
     .banner-content a{
